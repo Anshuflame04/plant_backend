@@ -6,22 +6,26 @@ from fastapi.middleware.cors import CORSMiddleware
 from PIL import Image
 from tensorflow.keras.applications.mobilenet_v3 import preprocess_input
 import json
+import os
 
 # Load models and disease details
+model_directory = 'backend/model'
+data_directory = 'backend/data'
+
 models = {
-    'tomato': tf.keras.models.load_model(r'backend/model/Tomato_model_v4.keras'),
-    'potato': tf.keras.models.load_model(r'backend/model/Potato_model_v2.keras'),
-    'rice': tf.keras.models.load_model(r'backend/model/Rice_model_v3.keras'),
-    'wheat': tf.keras.models.load_model(r'backend/model/Rice_model_v3.keras'),
-    'apple': tf.keras.models.load_model(r'backend/model/apple_model_v1.keras')
+    'tomato': tf.keras.models.load_model(os.path.join(model_directory, 'Tomato_model_v4.keras')),
+    'potato': tf.keras.models.load_model(os.path.join(model_directory, 'Potato_model_v2.keras')),
+    'rice': tf.keras.models.load_model(os.path.join(model_directory, 'Rice_model_v3.keras')),
+    'wheat': tf.keras.models.load_model(os.path.join(model_directory, 'Rice_model_v3.keras')),  # Make sure you use the correct model for wheat
+    'apple': tf.keras.models.load_model(os.path.join(model_directory, 'apple_model_v1.keras'))
 }
 
 disease_details = {
-    'tomato': json.load(open(r'backend/data/TomatoDetails.json')),
-    'potato': json.load(open(r'backend/data/PotatoDetails.json')),
-    'rice': json.load(open(r'backend/data/RiceDetails.json')),
-    'wheat': json.load(open(r'backend/data/RiceDetails.json')),
-    'apple': json.load(open(r'backend/data/AppleDetails.json'))
+    'tomato': json.load(open(os.path.join(data_directory, 'TomatoDetails.json'))),
+    'potato': json.load(open(os.path.join(data_directory, 'PotatoDetails.json'))),
+    'rice': json.load(open(os.path.join(data_directory, 'RiceDetails.json'))),
+    'wheat': json.load(open(os.path.join(data_directory, 'RiceDetails.json'))),  # Ensure you have the correct details for wheat
+    'apple': json.load(open(os.path.join(data_directory, 'AppleDetails.json')))
 }
 
 # Create FastAPI application
@@ -31,7 +35,7 @@ app = FastAPI()
 origins = ["http://localhost:3000", "https://your-react-app.com"]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins for testing; restrict in production
+    allow_origins=origins,  # Update this list with your production URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -52,7 +56,7 @@ def preprocess_image(image: Image.Image):
 async def predict(crop_name: str, file: UploadFile = File(...)):
     if crop_name not in models:
         return JSONResponse(content={"error": "Invalid crop name."}, status_code=400)
-    
+
     try:
         model = models[crop_name]  # Load the appropriate model
         disease_dict = disease_details[crop_name]  # Load disease details
