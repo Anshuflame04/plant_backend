@@ -1,0 +1,56 @@
+{
+    "Rice___Bacterial_Leaf_Blight": {
+        "name": "Bacterial Leaf Blight",
+        "cause": "Bacteria (Xanthomonas oryzae pv. oryzae)",
+        "prevention": "Use resistant varieties, proper irrigation practices, and crop rotation.",
+        "medicines": "Copper-based bactericides can be effective."
+    },
+    "Rice___Brown_Spot": {
+        "name": "Brown Spot",
+        "cause": "Fungus (Bipolaris oryzae)",
+        "prevention": "Practice crop rotation, proper fertilization, and timely harvest.",
+        "medicines": "Fungicides containing carbendazim and tricyclazole."
+    },
+    "Rice___Healthy": {
+        "name": "Healthy Rice",
+        "cause": "No disease present.",
+        "prevention": "Maintain healthy soil and proper care.",
+        "medicines": "N/A"
+    },
+    "Rice___Hispa": {
+        "name": "Rice Hispa",
+        "cause": "Insect pest (Dicladispa armigera)",
+        "prevention": "Use insect-resistant varieties and apply insecticides as necessary.",
+        "medicines": "Insecticides such as imidacloprid."
+    },
+    "Rice___Leaf_Blast": {
+        "name": "Leaf Blast",
+        "cause": "Fungus (Magnaporthe oryzae)",
+        "prevention": "Use resistant varieties and maintain good field drainage.",
+        "medicines": "Fungicides like pyraziflumid."
+    },
+    "Rice___Leaf_scald": {
+        "name": "Leaf Scald",
+        "cause": "Bacteria (Burkholderia glumae)",
+        "prevention": "Avoid wet conditions and practice crop rotation.",
+        "medicines": "No specific treatments; management is key."
+    },
+    "Rice___Narrow_Brown_Leaf_Spot": {
+        "name": "Narrow Brown Leaf Spot",
+        "cause": "Fungus (Cochliobolus miyabeanus)",
+        "prevention": "Use resistant varieties and improve field drainage.",
+        "medicines": "Fungicides containing benomyl and thiophanate-methyl."
+    },
+    "Rice___Neck_Blast": {
+        "name": "Neck Blast",
+        "cause": "Fungus (Magnaporthe oryzae)",
+        "prevention": "Plant resistant varieties and practice proper fertilization.",
+        "medicines": "Use fungicides for control."
+    },
+    "Rice___Sheath_Blight": {
+        "name": "Sheath Blight",
+        "cause": "Fungus (Rhizoctonia solani)",
+        "prevention": "Use resistant varieties and maintain proper field drainage.",
+        "medicines": "Fungicides like azoxystrobin."
+    }
+}

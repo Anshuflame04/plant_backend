@@ -1,0 +1,27 @@
+{
+    "Black_Rot": {
+      "name": "Apple Black Rot",
+      "cause": "Fungal disease caused by Diplodia seriata.",
+      "prevention": "Prune infected branches, clean fallen leaves, and apply fungicides.",
+      "medicines": "Captan, Mancozeb"
+    },
+    "Cedar_Rust": {
+      "name": "Cedar Apple Rust",
+      "cause": "Fungal disease caused by Gymnosporangium juniperi-virginianae.",
+      "prevention": "Remove cedar trees near apple orchards and apply fungicides.",
+      "medicines": "Tebuconazole, Propiconazole"
+    },
+    "Healthy": {
+      "name": "Healthy Apple",
+      "cause": "No disease.",
+      "prevention": "N/A",
+      "medicines": "N/A"
+    },
+    "Scab": {
+      "name": "Apple Scab",
+      "cause": "Fungal disease caused by Venturia inaequalis.",
+      "prevention": "Use resistant varieties, remove infected leaves, and apply fungicides.",
+      "medicines": "Chlorothalonil, Copper-based fungicides"
+    }
+  }
+  

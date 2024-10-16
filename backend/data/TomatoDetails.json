@@ -1,0 +1,62 @@
+{
+    "Bacterial_Spot": {
+        "name": "Tomato Bacterial Spot",
+        "cause": "Bacterial disease caused by Xanthomonas perforans.",
+        "prevention": "Use resistant varieties, manage water levels, and apply bactericides.",
+        "medicines": "Copper-based bactericides."
+    },
+    "Early_Blight": {
+        "name": "Tomato Early Blight",
+        "cause": "Fungal disease caused by Alternaria solani.",
+        "prevention": "Use resistant varieties, remove infected leaves, and apply fungicides.",
+        "medicines": "Chlorothalonil, Mancozeb."
+    },
+    "Healthy": {
+        "name": "Healthy Tomato",
+        "cause": "No disease.",
+        "prevention": "N/A",
+        "medicines": "N/A"
+    },
+    "Late_Blight": {
+        "name": "Tomato Late Blight",
+        "cause": "Fungal disease caused by Phytophthora infestans.",
+        "prevention": "Use resistant varieties, manage moisture levels, and apply fungicides.",
+        "medicines": "Metalaxyl, Mancozeb."
+    },
+    "Leaf_Mold": {
+        "name": "Tomato Leaf Mold",
+        "cause": "Fungal disease caused by Passalora fulva.",
+        "prevention": "Ensure good air circulation and apply fungicides.",
+        "medicines": "Chlorothalonil, Mancozeb."
+    },
+    "Mosaic_Virus": {
+        "name": "Tomato Mosaic Virus",
+        "cause": "Viral disease caused by Tomato mosaic virus.",
+        "prevention": "Use virus-free seeds, control insect vectors, and remove infected plants.",
+        "medicines": "No specific medicines; manage with prevention and control measures."
+    },
+    "Septoria_Leaf_Spot": {
+        "name": "Tomato Septoria Leaf Spot",
+        "cause": "Fungal disease caused by Septoria lycopersici.",
+        "prevention": "Remove infected leaves, use resistant varieties, and apply fungicides.",
+        "medicines": "Chlorothalonil, Mancozeb."
+    },
+    "Spider_Mites": {
+        "name": "Tomato Spider Mites (Two-spotted Spider Mite)",
+        "cause": "Pest caused by Tetranychus urticae.",
+        "prevention": "Use miticides and natural predators, maintain plant health.",
+        "medicines": "Acaricides like Abamectin, Neem oil."
+    },
+    "Target_Spot": {
+        "name": "Tomato Target Spot",
+        "cause": "Fungal disease caused by Corynespora cassiicola.",
+        "prevention": "Remove infected plant debris, use resistant varieties, and apply fungicides.",
+        "medicines": "Triazole fungicides, Chlorothalonil."
+    },
+    "Yellow_Leaf_Curl_Virus": {
+        "name": "Tomato Yellow Leaf Curl Virus",
+        "cause": "Viral disease caused by Tomato yellow leaf curl virus.",
+        "prevention": "Use resistant varieties, control whitefly vectors, and remove infected plants.",
+        "medicines": "No specific medicines; manage with prevention and control measures."
+    }
+}
